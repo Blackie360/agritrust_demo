@@ -24,7 +24,7 @@ const NavigationMenuList = React.forwardRef<
   <NavigationMenuPrimitive.List
     ref={ref}
     className={cn(
-      "flex flex-wrap items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-2 py-1 backdrop-blur-xl",
+      "flex flex-wrap items-center justify-center gap-2",
       className
     )}
     {...props}
@@ -43,8 +43,8 @@ const NavigationMenuLink = React.forwardRef<
     ref={ref}
     active={active}
     className={cn(
-      "inline-flex items-center rounded-full px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10",
-      active ? "bg-white/[0.18] text-white" : "text-white/80",
+      "inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-gray-900",
+      active ? "text-gray-900" : "",
       className
     )}
     {...props}

@@ -2,17 +2,17 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const baseStyles =
-  "inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent disabled:pointer-events-none disabled:opacity-60";
+  "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent disabled:pointer-events-none disabled:opacity-60";
 
 const variantStyles = {
   default:
-    "bg-white/90 text-gray-900 hover:bg-white focus-visible:ring-white/80 focus-visible:ring-opacity-60",
+    "bg-black text-white hover:bg-gray-900 focus-visible:ring-gray-900/50",
   secondary:
-    "bg-white/10 text-white hover:bg-white/16 focus-visible:ring-white/50",
-  ghost: "bg-transparent text-white hover:bg-white/10",
+    "bg-gray-100 text-gray-900 hover:bg-gray-200 focus-visible:ring-gray-200/50",
+  ghost: "bg-transparent text-gray-700 hover:bg-gray-100",
   outline:
-    "border border-white/30 bg-transparent text-white hover:bg-white/10 focus-visible:ring-white/40",
-  link: "text-white underline-offset-4 underline hover:text-white/80"
+    "border border-gray-300 bg-transparent text-gray-900 hover:bg-gray-50 focus-visible:ring-gray-300/50",
+  link: "text-gray-700 underline-offset-4 underline hover:text-gray-900"
 } as const;
 
 const sizeStyles = {

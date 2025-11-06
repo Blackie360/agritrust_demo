@@ -2,8 +2,8 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const badgeVariants = {
-  default: "border-transparent bg-white/10 text-white",
-  outline: "border border-white/30 bg-transparent text-white"
+  default: "border-transparent bg-gray-100 text-gray-700",
+  outline: "border border-gray-300 bg-transparent text-gray-700"
 } as const;
 
 type BadgeVariant = keyof typeof badgeVariants;
@@ -18,7 +18,7 @@ export const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
       <div
         ref={ref}
         className={cn(
-          "inline-flex items-center rounded-full px-3 py-1 text-xs font-medium uppercase tracking-wide",
+          "inline-flex items-center rounded-lg px-3 py-1 text-xs font-medium",
           badgeVariants[variant],
           className
         )}
