@@ -1,0 +1,43 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="960" fill="#080E15"/>
+  <rect width="1440" height="960" fill="url(#glow_blue)"/>
+  <rect width="1440" height="960" fill="url(#glow_amber)"/>
+  <rect width="1440" height="960" fill="url(#glow_green)"/>
+  <rect width="1440" height="960" fill="url(#glow_ribbon)"/>
+  <rect width="1440" height="960" fill="url(#vignetting)"/>
+  <g opacity="0.4" filter="url(#grain)">
+    <rect width="1440" height="960" fill="#FFFFFF" fill-opacity="0.06"/>
+  </g>
+  <defs>
+    <radialGradient id="glow_blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 220) rotate(43.2) scale(560 460)">
+      <stop stop-color="#56BECF" stop-opacity="0.65"/>
+      <stop offset="0.48" stop-color="#265B79" stop-opacity="0.28"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow_amber" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1090 190) rotate(58.4) scale(410 360)">
+      <stop stop-color="#F2C27D" stop-opacity="0.55"/>
+      <stop offset="0.44" stop-color="#8F5A30" stop-opacity="0.16"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow_green" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 720) rotate(90) scale(520 420)">
+      <stop stop-color="#78C4A2" stop-opacity="0.6"/>
+      <stop offset="0.52" stop-color="#2B6A53" stop-opacity="0.22"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow_ribbon" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 540) rotate(90) scale(520 220)">
+      <stop stop-color="#9AE8FF" stop-opacity="0.3"/>
+      <stop offset="0.64" stop-color="#1D3B52" stop-opacity="0.12"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vignetting" x1="720" y1="0" x2="720" y2="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#080E15" stop-opacity="0"/>
+      <stop offset="0.62" stop-color="#080E15" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#080E15" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="grain" x="-200" y="-200" width="1840" height="1360" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="2.6" numOctaves="4" result="noise"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="overlay"/>
+    </filter>
+  </defs>
+</svg>
+
